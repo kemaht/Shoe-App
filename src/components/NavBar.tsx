@@ -1,12 +1,14 @@
 import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/react";
 import { MdApi } from "react-icons/md";
+import nikeIcon from "/workspaces/Shoe-App/src/assets/nikeIcon.png"
 
 const NavBar = () => {
   return (
     <Navbar className="bg-slate-100 h-16">
       <NavbarBrand>
-        <MdApi className="w-8 h-8 text-primary" />
-        <p className="font-bold text-inherit">Weather API</p>
+        <img className="w-14 mr-1 text-primary" 
+          src = {nikeIcon}/>
+        <p className="font-bold text-inherit">Sneaker API</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {/* <NavbarItem>
